@@ -9,3 +9,4 @@ v1/README.md
 # Ignore node_modules directory
 /node_modules/
 /backend/node_modules/
+/frontend/building-materials
