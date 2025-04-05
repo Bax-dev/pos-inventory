@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login - POS System</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+<body class="bg-gray-100 flex justify-center items-center min-h-screen p-4">
+
+  <div class="bg-white shadow-lg rounded-lg flex flex-col md:flex-row w-full max-w-4xl">
+    <!-- Left Section (Form) -->
+    <div class="w-full md:w-1/2 p-8">
+      <h2 class="text-2xl font-bold text-gray-800 text-center">Welcome Back</h2>
+      <p class="text-center text-gray-500 mb-5">Login to manage your inventory and sales</p>
+      <form>
+        <div class="mb-4">
+          <label class="block text-gray-700 font-semibold mb-1">Email</label>
+          <div class="flex items-center border rounded-md p-2">
+            <i class="bi bi-envelope-fill text-gray-400 mr-2"></i>
+            <input type="email" class="w-full outline-none" placeholder="example@mail.com" required>
+          </div>
+        </div>
+        <div class="mb-4">
+          <label class="block text-gray-700 font-semibold mb-1">Password</label>
+          <div class="flex items-center border rounded-md p-2">
+            <i class="bi bi-lock-fill text-gray-400 mr-2"></i>
+            <input type="password" class="w-full outline-none" placeholder="••••••••" required>
+          </div>
+        </div>
+        <button class="w-full bg-gray-900 text-white p-2 rounded-md hover:bg-gray-800">Register</button>
+        <p class="text-center text-gray-600 mt-3">Already have an account? <a href="login.html" class="text-gray-900 font-semibold">Login</a></p>
+      </form>
+    </div>
+
+    <!-- Right Section (Info) -->
+    <div class="w-full md:w-1/2 flex flex-col justify-center items-center text-white p-8 rounded-b-lg md:rounded-r-lg md:rounded-bl-none" style="background: linear-gradient(to right, #1e293b, #374151);">
+      <h2 class="text-2xl font-bold">How it works?</h2>
+      <p class="text-center text-gray-300 mt-3">Login to continue managing your store efficiently.</p>
+      <button class="mt-5 p-3 bg-white text-gray-900 rounded-full flex items-center shadow-md">
+        <i class="bi bi-play-fill text-xl"></i>
+      </button>
+    </div>
+  </div>
+
+</body>
+</html>
