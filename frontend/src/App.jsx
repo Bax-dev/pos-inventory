@@ -1,9 +1,18 @@
 import React from 'react';
-import Register from './pages/Register';
-import './styles/main.css'; // Importing the Tailwind CSS file
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import navigationRoutes from './routes/navigationRoutes';
+import './styles/main.css'; 
 
 const App = () => {
-  return <Register />;
+  return (
+    <Router>
+      <Routes>
+        {navigationRoutes.map((route, index) => (
+          <Route key={index} path={route.path} element={route.element} />
+        ))}
+      </Routes>
+    </Router>)
 };
 
 export default App;
+

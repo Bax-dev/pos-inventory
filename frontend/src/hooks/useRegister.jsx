@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import axios from 'axios';
 import { API_ROUTES } from '../services/apiService';
-import { toast } from 'react-toastify';  // Import toast
+import { toast } from 'react-toastify';  
 import 'react-toastify/dist/ReactToastify.css'; 
 
 export const useRegister = () => {
@@ -20,9 +20,8 @@ export const useRegister = () => {
       const response = await axios.post(API_ROUTES.REGISTER, formData);
       
       if (response.status === 200) {
-        // Show toast notification for successful registration
         toast.success('Registration successful!');
-        setFormData({ username: '', email: '', password: '' }); // Clear form data
+        setFormData({ username: '', email: '', password: '' }); 
       }
     } catch (error) {
       setErrorMessage('Registration failed. Please try again.');
